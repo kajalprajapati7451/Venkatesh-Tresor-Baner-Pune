@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Venkatesh Tresor – Ultra-Luxury Residences | Baner, Pune</title>
+  <meta name="description" content="Venkatesh Tresor – Ultra-luxury 3 & 4 BHK residences at Baner, Pune. Starting ₹1.85 Cr. RERA Registered."/>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-text">VENKATESH</span>
+        <span class="logo-sub">TRESOR</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+
+      <div class="hero-left" data-animate="fadeUp">
+        <div class="rera-badge">
+          <i class="fas fa-shield-halved"></i> RERA Registered &middot; MahaRERA P52100047xxx
+        </div>
+        <p class="hero-tagline">Ultra-Luxury Living in Pune's Finest Locale</p>
+        <h1 class="hero-title">Venkatesh<br><span>Tresor</span></h1>
+        <div class="hero-buttons">
+          <a href="#contact" class="btn btn-primary">Get Cost Sheet</a>
+          <a href="#contact" class="btn btn-outline">Book Site Visit</a>
+        </div>
+        <p class="hero-disclaimer">*Terms &amp; Conditions Apply. Prices subject to change.</p>
+      </div>
+
+      <div class="hero-right" data-animate="fadeLeft">
+        <div class="form-card">
+          <div class="form-card-header">
+            <h3>Get Exclusive Details</h3>
+            <p>Price &middot; Floor Plans &middot; Offers</p>
+          </div>
+          <form id="heroForm" class="lead-form" novalidate>
+            <div class="form-group">
+              <label for="heroName">Full Name*</label>
+              <input type="text" id="heroName" name="name" placeholder="Your Full Name" required/>
+              <span class="err" id="heroNameErr"></span>
+            </div>
+            <div class="form-group">
+              <label for="heroPhone">Mobile Number*</label>
+              <input type="tel" id="heroPhone" name="phone" placeholder="+91 00000 00000" required/>
+              <span class="err" id="heroPhoneErr"></span>
+            </div>
+            <div class="form-group">
+              <label for="heroPreference">I'm Interested In</label>
+              <select id="heroPreference" name="preference">
+                <option value="">Select Preference</option>
+                <option>Cost Sheet</option>
+                <option>Site Visit</option>
+                <option>Floor Plans</option>
+                <option>Investment Enquiry</option>
+              </select>
+            </div>
+            <div class="form-group captcha-group">
+              <label id="captchaQuestion"></label>
+              <input type="number" id="captchaAnswer" placeholder="Your Answer" required/>
+              <span class="err" id="captchaErr"></span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <i class="fas fa-paper-plane"></i> Get Cost Sheet Free
+            </button>
+            <p class="privacy-note"><i class="fas fa-lock"></i> 100% Secure. No Spam. Privacy Protected.</p>
+          </form>
+        </div>
+      </div>
+
+    </div>
+    <div class="scroll-hint"><span></span></div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+
+      <div class="section-header" data-animate="fadeUp">
+        <span class="section-tag">Get In Touch</span>
+        <h2>Request a Callback</h2>
+        <p>Our luxury real estate advisor will connect within 30 minutes.</p>
+      </div>
+
+      <div class="contact-form-center" data-animate="fadeUp">
+        <div class="contact-form-wrap">
+          <form id="contactForm" class="lead-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="cName">Full Name*</label>
+                <input type="text" id="cName" name="name" placeholder="Your Name" required/>
+                <span class="err" id="cNameErr"></span>
+              </div>
+              <div class="form-group">
+                <label for="cPhone">Mobile Number*</label>
+                <input type="tel" id="cPhone" name="phone" placeholder="+91 00000 00000" required/>
+                <span class="err" id="cPhoneErr"></span>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="cEmail">Email Address</label>
+                <input type="email" id="cEmail" name="email" placeholder="your@email.com"/>
+              </div>
+              <div class="form-group">
+                <label for="cPref">Interested In</label>
+                <select id="cPref" name="preference">
+                  <option value="">Select</option>
+                  <option>Cost Sheet</option>
+                  <option>Site Visit</option>
+                  <option>Floor Plans</option>
+                  <option>Home Loan</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="cMsg">Message (Optional)</label>
+              <textarea id="cMsg" name="message" rows="3" placeholder="Any specific requirements..."></textarea>
+            </div>
+            <div class="form-group captcha-group">
+              <label id="captchaQuestion2"></label>
+              <input type="number" id="captchaAnswer2" placeholder="Your Answer" required/>
+              <span class="err" id="captchaErr2"></span>
+            </div>
+            <div class="form-group consent-group">
+              <label class="checkbox-label">
+                <input type="checkbox" id="consent" required/>
+                <span>I agree to the <a href="#" class="link">Privacy Policy</a> and consent to be contacted.</span>
+              </label>
+              <span class="err" id="consentErr"></span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <i class="fas fa-paper-plane"></i> Submit Enquiry
+            </button>
+            <p class="privacy-note"><i class="fas fa-lock"></i> Your information is 100% safe with us.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container footer-grid">
+
+        <!-- Brand -->
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <span class="logo-text">VENKATESH</span>
+            <span class="logo-sub">TRESOR</span>
+            </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>&copy; 2025 Venkatesh Constructions. All Rights Reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms &amp; Conditions</a>
+          <a href="#">Disclaimer</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MOBILE STICKY BAR -->
+  <div class="mobile-sticky-bar" id="mobileStickyBar">
+    <a href="tel:+919999999999" class="sticky-btn sticky-call">
+      <i class="fas fa-phone"></i>
+      <span>Call</span>
+    </a>
+    <a href="https://wa.me/918888888888" class="sticky-btn sticky-whatsapp" target="_blank" rel="noopener">
+      <i class="fab fa-whatsapp"></i>
+      <span>WhatsApp</span>
+    </a>
+    <a href="#contact" class="sticky-btn sticky-enquire">
+      <i class="fas fa-paper-plane"></i>
+      <span>Enquire</span>
+    </a>
+  </div>
+
+  <!-- TOAST -->
+  <div class="toast" id="toast">
+    <i class="fas fa-check-circle"></i>
+    <span id="toastMsg">Thank you! Our advisor will call you shortly.</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
