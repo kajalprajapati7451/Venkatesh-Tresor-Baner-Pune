@@ -333,6 +333,7 @@ textarea { resize: vertical; }
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .hero-disclaimer {
   margin-top: 1.2rem;
@@ -635,6 +636,8 @@ textarea { resize: vertical; }
   display: grid;
   grid-template-columns: 1.5fr 1fr 1fr;
   gap: 3rem;
+  justify-items: center;
+  text-align: center;
 }
 .footer-logo {
   display: flex;
@@ -741,10 +744,12 @@ textarea { resize: vertical; }
 }
 .footer-bottom-inner {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
   flex-wrap: wrap;
   gap: 0.5rem;
+  text-align: center;
 }
 .footer-bottom p { font-size: 0.78rem; color: rgba(255,255,255,0.3); }
 .footer-bottom-links { display: flex; gap: 1.2rem; }
